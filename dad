@@ -1,0 +1,76 @@
+wait(4)
+
+local playerName = game:GetService("Players").LocalPlayer.Name;
+local whitelistedNames = {
+["DuelsLegend"] = true;
+["Qoucx"] = true;
+["Placeholder"] = true;
+["Placeholder"] = true;
+["Placeholder"] = true;
+["Placeholder"] = true;
+["Placeholder"] = true;
+}
+if not (whitelistedNames[playerName]) then
+game:GetService("Players").LocalPlayer:Kick("You are not whitelisted!")
+end
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("BGS Dupe Beta", "Serpent")
+
+local Tab = Window:NewTab("Bypass Anti Cheat")
+local Section = Tab:NewSection("Everything within this script is still in beta")
+local Section = Tab:NewSection("So be ready for bugs and glitches etc and stuff not to work")
+local Section = Tab:NewSection("But everything will finally come out not buggy and will work")
+local Section = Tab:NewSection("Enjoy!")
+local TeleportService = game:GetService("TeleportService")
+local player = game.Players.LocalPlayer
+local TS = game:GetService("TweenService")
+local Tween = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-8298, 1729, 8218)})
+
+
+Section:NewButton("Bypass Anti Cheat", "", function()
+    game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TempTradeBan.Visible = true;
+    wait()
+    for _,v in pairs (game:GetService("Workspace"):GetDescendants()) do 
+            wait()
+                Tween:Play()
+                wait()
+                if player then 
+                wait(3)
+
+                game:Shutdown()
+        end
+    end 
+end)
+
+local Tab = Window:NewTab("Dupe")
+local Section = Tab:NewSection("")
+Section:NewButton("2nd Bypass", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,0,0)
+end)
+
+Section:NewButton("Press After 2nd Bypass", "", function()
+    while true do wait()
+    for _,v in pairs (game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame:GetDescendants()) do  
+    
+    wait()
+            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.NeedMoney.Visible = true;
+            wait(1)
+            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame.Visible = true;
+            wait(1)
+            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame.Visible = false;
+            wait(1)
+            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MaxPets.Visible = true;
+            wait(1)
+            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame:Destroy()
+            wait(1)
+            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MaxPets.Visible:Destroy()
+        end
+    end
+end)
+
+local Tab = Window:NewTab("!!!!!!")
+local Section = Tab:NewSection("DM Silent#0001 on discord for help")
+Section:NewButton("!!!!!!!!!!", "", function()
+    setclipboard("SiIent#0001")
+end)
