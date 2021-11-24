@@ -9,8 +9,8 @@ local whitelistedNames = {
 ["Cool_Doge68"] = true;
 ["Leon_Jka"] = true;
 ["thechosenizaiah"] = true;
-["Placeholder"] = true;
-["Placeholder"] = true;
+["Jokerhasthebelt"] = true;
+["kingowl99"] = true;
 ["Placeholder"] = true;
 }
 if not (whitelistedNames[playerName]) then
