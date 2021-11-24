@@ -1,11 +1,14 @@
 wait(4)
-
+if game:IsLoaded() then 
+wait()
 local playerName = game:GetService("Players").LocalPlayer.Name;
 local whitelistedNames = {
 ["DuelsLegend"] = true;
 ["Qoucx"] = true;
-["Placeholder"] = true;
-["Placeholder"] = true;
+["MistakenStudios"] = true;
+["Cool_Doge68"] = true;
+["Leon_Jka"] = true;
+["thechosenizaiah"] = true;
 ["Placeholder"] = true;
 ["Placeholder"] = true;
 ["Placeholder"] = true;
@@ -46,26 +49,30 @@ end)
 local Tab = Window:NewTab("Dupe")
 local Section = Tab:NewSection("")
 Section:NewButton("2nd Bypass", "", function()
+    for _,v in pairs (game:GetService("Players").Qoucx.PlayerGui.ScreenGui.MainButtons:GetDescendants()) do 
+        wait()
+        v:Destroy()
+        end
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,0,0)
 end)
 
-Section:NewButton("Press After 2nd Bypass", "", function()
+Section:NewButton("The Dupe, Click 3 Dots", "This won't work if haven't bypassed", function()
     while true do wait()
     for _,v in pairs (game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame:GetDescendants()) do  
     
     wait()
-            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.NeedMoney.Visible = true;
-            wait(1)
-            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame.Visible = true;
-            wait(1)
-            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame.Visible = false;
-            wait(1)
-            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MaxPets.Visible = true;
-            wait(1)
-            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame:Destroy()
-            wait(1)
-            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MaxPets.Visible:Destroy()
-        end
+        game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.NeedMoney.Visible = true;
+        wait()
+        game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame.Visible = true;
+        wait()
+        game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame.Visible = false;
+        wait()
+        game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MaxPets.Visible = true;
+        wait()
+        game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame:Destroy()
+        wait()
+        game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MaxPets.Visible:Destroy()
+    end
     end
 end)
 
@@ -74,3 +81,4 @@ local Section = Tab:NewSection("DM Silent#0001 on discord for help")
 Section:NewButton("!!!!!!!!!!", "", function()
     setclipboard("SiIent#0001")
 end)
+end
