@@ -11,7 +11,7 @@ local whitelistedNames = {
 ["thechosenizaiah"] = true;
 ["Jokerhasthebelt"] = true;
 ["kingowl99"] = true;
-["Placeholder"] = true;
+["stephen_T08"] = true;
 }
 if not (whitelistedNames[playerName]) then
 game:GetService("Players").LocalPlayer:Kick("You are not whitelisted!")
