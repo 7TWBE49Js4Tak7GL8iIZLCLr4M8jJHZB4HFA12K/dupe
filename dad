@@ -16,7 +16,7 @@ local whitelistedNames = {
 ["XXcooldroidXX12"] = true;
 ["elsa20275"] = true;
 ["Mikes209"] = true;
-[""] = true;
+["bossmanboss22"] = true;
 [""] = true;
 [""] = true;
 [""] = true;
@@ -60,7 +60,7 @@ end)
 local Section = Tab:NewSection("If that worked that should of crashed")
 local Section = Tab:NewSection("Your game, now do the second")
 Section:NewButton("2nd Bypass", "", function()
-    for _,v in pairs (game:GetService("Players").Qoucx.PlayerGui.ScreenGui.MainButtons:GetDescendants()) do 
+    for _,v in pairs (game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MainButtons:GetDescendants()) do 
         wait()
         v:Destroy()
         end
@@ -86,7 +86,7 @@ Section:NewButton("The Dupe, Click 3 Dots", "This won't work if haven't bypassed
         game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame.Visible = false;
         wait()
         game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MaxPets.Visible = true;
-        wait()
+        wait(0.3)
         game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.TradeFrame:Destroy()
         wait()
         game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MaxPets.Visible:Destroy()
