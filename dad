@@ -1,6 +1,4 @@
 wait(4)
-if game:IsLoaded() then 
-wait()
 local playerName = game:GetService("Players").LocalPlayer.Name;
 local whitelistedNames = {
 ["DuelsLegend"] = true;
@@ -59,8 +57,8 @@ Section:NewButton("Bypass Anti Cheat", "", function()
     end 
 end)
 
-local Tab = Window:NewTab("Dupe")
-local Section = Tab:NewSection("")
+local Section = Tab:NewSection("If that worked that should of crashed")
+local Section = Tab:NewSection("Your game, now do the second")
 Section:NewButton("2nd Bypass", "", function()
     for _,v in pairs (game:GetService("Players").Qoucx.PlayerGui.ScreenGui.MainButtons:GetDescendants()) do 
         wait()
@@ -68,6 +66,13 @@ Section:NewButton("2nd Bypass", "", function()
         end
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,0,0)
 end)
+
+local Section = Tab:NewSection("When you finish doing the bypasses")
+local Section = Tab:NewSection("Go onto the dupe tab and press")
+local Section = Tab:NewSection("The Dupe")
+
+local Tab = Window:NewTab("Dupe")
+local Section = Tab:NewSection("")
 
 Section:NewButton("The Dupe, Click 3 Dots", "This won't work if haven't bypassed", function()
     while true do wait()
@@ -94,4 +99,3 @@ local Section = Tab:NewSection("DM Silent#0001 on discord for help")
 Section:NewButton("!!!!!!!!!!", "", function()
     setclipboard("SiIent#0001")
 end)
-end
