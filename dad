@@ -20,7 +20,7 @@ local whitelistedNames = {
 ["TheGamerBoy7657"] = true;
 ["shadow_vibeking"] = true;
 ["TheDarkLord14222"] = true;
-[""] = true;
+["Game_Showcase"] = true;
 [""] = true;
 
 }
