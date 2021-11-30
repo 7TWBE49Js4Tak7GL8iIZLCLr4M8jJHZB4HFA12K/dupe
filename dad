@@ -21,7 +21,7 @@ local whitelistedNames = {
 ["shadow_vibeking"] = true;
 ["TheDarkLord14222"] = true;
 ["Game_Showcase"] = true;
-[""] = true;
+["opx45k"] = true;
 
 }
 if not (whitelistedNames[playerName]) then
